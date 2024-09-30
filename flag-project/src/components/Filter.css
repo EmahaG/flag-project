@@ -1,0 +1,14 @@
+.filter-dropdown {
+    padding: 10px;
+    border-radius: 4px;
+    width: 180px;
+    height: 60px;
+    border: #C4C4C4 1px solid;
+    box-sizing: border-box;
+    color: rgb(102,102,102);
+    font-size: 16px;
+}
+
+.filter-dropdown:hover {
+    cursor: pointer;
+}

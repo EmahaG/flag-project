@@ -1,0 +1,58 @@
+--**-- DESKTOP --**--
+
+Navbar: flexbox med tre element
+1. Text: "The Flag App"
+2. Techover logo
+3. Dark/light mode switch (flexbox med två element: bild + text)
+I Navbar lägg samma margin left + right som containern sen, så att allt är aligned
+Dropshadow, åtminstone i light mode 
+
+
+
+-- HOME --
+
+Navbar
+
+Container:
+Alignar allt innehåll på sidan med margin eller padding? (lägg till border-box?)
+
+Choices-container:
+Flexbox justify content space between för två komponenter:
+1. Search field (placeholder: Search for a country) - Dropshadow, åtminstone i light mode 
+2. Dropdown (Filter by region) - Dropshadow, åtminstone i light mode 
+
+Card-container:
+Flexbox som innehåller alla cards 
+
+Card:
+Flexbox column med tre grejer:
+1. Flagga
+2. h2/h3 country.name
+3. p-tagg med info om landet (population, region, capital)
+Dropshadow, åtminstone i light mode (på demon)
+
+
+
+-- COUNTRY PAGE --
+
+Navbar
+
+Back-container:
+1. pil bakåt
+2. text "Bakåt"
+
+Container:
+Flexbox space between row med två element
+1. Flagga
+2. text-container
+
+Text container:
+Divar med olika element1.
+1. h2 country name
+2. container med data om landet (ta inspo från blå react router dom projectet och profilsidan) - 7 st uppdelade i två block
+3. container med metadata "Border countries:" och klickbara knappar med grannländerna
+
+
+--**-- MOBILE --**--
+
+Generellt samma uppdelning som desktop men allt stacked i column istället för row, så bara ett card per rad i home page, och i country page ligger all info också under varandra

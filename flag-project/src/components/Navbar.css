@@ -1,0 +1,70 @@
+/* Navbar.css */
+
+nav {
+  width: 100%; /* Full width */
+  height: 60px;
+  background-color: white; /* Navbar background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  border-bottom: black; /* Optional border */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Center the inner container */
+}
+
+/* The inner content of the navbar, aligned with app's padding */
+.navbar {
+  width: 100%;
+  max-width: 1200px; /* Adjust this to match the app's max width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+  height: 22px;
+}
+
+.mode-switch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 130px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.mode-switch img {
+  height: 20px;
+}
+
+.mode-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #212121;
+}
+
+.mode-switch:hover {
+  cursor: pointer;
+  background-color: #c4c4c42f;
+  border-radius: 4px;
+}
+
+.dark-mode .mode-switch:hover {
+  cursor: pointer;
+  background-color: #c4c4c40d;
+  border-radius: 4px;
+}
+

@@ -1,0 +1,99 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 100px;
+  flex-direction: row;
+  height: 50px; /* Justera höjden till vad som känns bra */
+  box-sizing: border-box; /* Gör att padding inte påverkar bredden */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* General Dark Mode Styles */
+body.dark-mode {
+  background-color: #2b3844; /* Dark background for the whole site */
+  color: #ffffff; /* Light text color */
+}
+
+body.dark-mode nav {
+  background-color: #3E4A55;
+}
+
+body.dark-mode h2 {
+  color: #ffffff; 
+}
+
+body.dark-mode .home {
+  background-color: #202c36;
+}
+
+body.dark-mode .card {
+  background-color: #3E4A55;
+  border: none;
+}
+
+body.dark-mode .card p {
+  color: #C7CACE;
+}
+
+body.dark-mode .card h3 {
+  color: #C7CACE;
+}
+
+body.dark-mode .search {
+  background-color: #202c36;
+  color: #C7CACE;
+}
+
+body.dark-mode .filter-dropdown {
+  background-color: #202c36;
+  color: #C7CACE;
+}
+
+body.dark-mode .country-page {
+  background-color: #202c36;
+  color: #C7CACE;
+}
+
+body.dark-mode .border-link {
+  background-color: #444E56;
+  color: #C7CACE;
+}
+
+body.dark-mode .back {
+  color: #C7CACE;
+  text-decoration: none;
+}

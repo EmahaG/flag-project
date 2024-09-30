@@ -1,0 +1,123 @@
+.country-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.container {
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    overflow-y: hidden;
+}
+
+.back-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 40px;
+    gap: 5px;
+    padding: 0px;
+}
+
+.back img {
+    width: 15px;
+}
+
+.dark-mode .back-arrow {
+    filter: invert(100%); /* Invert arrow image for dark mode */
+  }
+
+.back:hover {
+    cursor: pointer;
+    background-color: #c4c4c42f;
+    border-radius: 4px;
+  }
+
+.country-container img {
+    width: 550px;
+    border-radius: 10px;
+    /* border: #c4c4c473 1px solid; */
+} 
+
+.country-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.country-container h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.country-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.country-data-left,
+.country-data-right {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the start */
+    width: auto; /* Adjust to fit content */
+}
+
+.border-countries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.borders-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.border-link {
+    padding: 6px 12px;
+    background-color: #EBEBEB;
+    border-radius: 15px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.country-page {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
