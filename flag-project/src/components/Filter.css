@@ -12,3 +12,11 @@
 .filter-dropdown:hover {
     cursor: pointer;
 }
+
+@media only screen and (min-width: 375px) and (max-width:900px) {
+  
+    * {
+        font-size: 12px;
+    }
+  
+  }

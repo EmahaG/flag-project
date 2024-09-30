@@ -58,3 +58,19 @@
 .card-link:hover {
     text-decoration: underline;
 }
+
+@media only screen and (min-width: 375px) and (max-width:900px) {
+  
+    .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        width: 100%;
+        height: 260px;
+        margin-bottom: 25px;
+    }
+  
+  }

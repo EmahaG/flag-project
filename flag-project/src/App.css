@@ -97,3 +97,21 @@ body.dark-mode .back {
   color: #C7CACE;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 375px) and (max-width:900px) {
+  
+  .choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    height: 50px; /* Justera höjden till vad som känns bra */
+    box-sizing: border-box; /* Gör att padding inte påverkar bredden */
+    gap: 15px;
+  }
+
+}
