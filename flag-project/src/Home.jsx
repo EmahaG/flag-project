@@ -6,7 +6,7 @@ import Card from './components/Card.jsx'; // Ensure path is correct
 import React, {useState} from 'react';
 import {useLoaderData} from 'react-router-dom';
 
-export default function Home() {
+export default function Home({darkMode}) {
     const countries = useLoaderData();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedRegion, setSelectedRegion] = useState('');
@@ -30,7 +30,7 @@ export default function Home() {
             <div className="container">
                 <div className="choice-container">
                     <Search onSearch={handleSearch} />
-                    <Filter onFilterChange={handleFilterChange} />
+                    <Filter darkMode={darkMode} onFilterChange={handleFilterChange} />
                 </div>
                 <Card countries={filteredCountries} />
             </div>

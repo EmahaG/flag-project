@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import logo from "../assets/techover-logo-dark.png";
 import logoLight from "../assets/techover-logo.png";
-import moonBordered from "../assets/moon-bordered.svg";
-import moon from "../assets/moon.svg";
+import darkModeIcon from "../assets/dark-mode-icon.svg";
+import lightModeIcon from "../assets/light-mode-icon.svg";
 import React, {useState} from 'react';
 import '../App.css'
 
@@ -28,7 +28,7 @@ const Navbar = () => {
               <input type="checkbox" checked={darkMode} readOnly />
               <span className="mode-switch">
                 <img 
-                  src={darkMode ? moon : moonBordered} 
+                  src={darkMode ? lightModeIcon : darkModeIcon} 
                 />
                 {darkMode ? 'DARK MODE' : 'LIGHT MODE'}</span>
             </div>

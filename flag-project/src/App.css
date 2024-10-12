@@ -44,8 +44,9 @@
 
 /* General Dark Mode Styles */
 body.dark-mode {
-  background-color: #2b3844; /* Dark background for the whole site */
+  background-color: #202c36; /* Dark background for the whole site */
   color: #ffffff; /* Light text color */
+  height: 100vh;
 }
 
 body.dark-mode nav {
@@ -58,7 +59,7 @@ body.dark-mode h2 {
 
 body.dark-mode .home {
   background-color: #202c36;
-  height: 100vh;
+  height: 100%;
 }
 
 body.dark-mode .filter-container:focus-within .filter-label,
@@ -66,6 +67,11 @@ body.dark-mode .filter-container:focus-within .filter-label,
     color: white; 
     background-color:  #202c36;
 } 
+
+body.dark-mode .filter-container:hover {
+  border: solid white 1px;
+  border-radius: 4px;
+}
 
 body.dark-mode .search-container:focus-within .search-label,
 .search-label.active {
