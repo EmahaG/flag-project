@@ -2,14 +2,16 @@
     position: relative; 
     margin: 20px; 
     width: 180px;
+    display: flex;
+    align-items: center;
 }
 
 .filter-label {
     position: absolute; 
-    left: 10px; 
-    top: 18px; 
+    left: 15px; 
+    top: 30%; 
     color: rgb(102, 102, 102); 
-    transition: all 0.2s; 
+    transition: all 0.2s;
 }
 
 .filter-container:focus-within .filter-label,
@@ -22,7 +24,23 @@
     padding: 4px;
 }
 
-.filter-dropdown {
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  .selected-option {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* .filter-dropdown {
     padding: 10px 40px 10px 15px;
     border-radius: 4px;
     width: 100%; 
@@ -31,11 +49,13 @@
     box-sizing: border-box;
     color: rgb(102, 102, 102);
     font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 
     -webkit-appearance: none;
     -moz-appearance: none; 
     appearance: none; 
-}
+} */
 
 .dropdown-arrow {
     position: absolute;
@@ -45,8 +65,31 @@
     pointer-events: none;
 }
 
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+  }
+  
+  .dropdown-option {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-option:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Highlight on hover */
+  }
+
 .filter-dropdown:hover {
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 375px) and (max-width:900px) {

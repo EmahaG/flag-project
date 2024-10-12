@@ -64,7 +64,7 @@ const CountryPage = () => {
           </Link>
         </div>
         <div className="country-container">
-          <img src={country.flags.png} alt={`Flag of ${country.name.common}`} />
+          <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} />
           <div className="country-textbox">
             <h1>{country.name.common}</h1>
             <div className="country-data">

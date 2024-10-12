@@ -9,7 +9,7 @@ const Card = ({countries}) => {
             {countries.map((country, i) => {
                 return (
                     <Link to={`/country/${country.name.common}`} className="card" key={i}>
-                        <img src={country.flags.png} alt={`Flag of ${country.name.common}`} />
+                        <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} />
                         <div className="country-text">
                             <h3>{country.name.common}</h3>
                             <p>Population: {country.population}</p>

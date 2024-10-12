@@ -65,8 +65,12 @@ body.dark-mode .home {
 body.dark-mode .filter-container:focus-within .filter-label,
 .filter-label.active {
     color: white; 
-    background-color:  #202c36;
+    background-color: #202c36;
 } 
+
+body.dark-mode .filter-dropdown option {
+  background-color: #3E4A55;
+}
 
 body.dark-mode .filter-container:hover {
   border: solid white 1px;
@@ -76,12 +80,13 @@ body.dark-mode .filter-container:hover {
 body.dark-mode .search-container:focus-within .search-label,
 .search-label.active {
   color: white; 
-  background-color:  #202c36;
+  background-color: #202c36;
 } 
 
 body.dark-mode .card {
   background-color: #3E4A55;
   border: none;
+  outline: 0px;
 }
 
 body.dark-mode .card p {

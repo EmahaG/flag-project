@@ -3,10 +3,6 @@ Jag vet att det är flera saker här jag inte fixat än. Detta är pga tidsbrist
 
 1. Vet att min container inte fungerar som den ska. Trodde jag löst det, men märkte att det inte fungerade riktigt så smidigt som jag tänkt, så detta behöver jag kika på en vända till.
 
-2. Detaljer i min dropdown och search (att texten ska flytta upp till border när fälten är markerade, samt pilen i dropdown).
-
-3. Upplever att flaggorna är pixliga, till skillnad från i er app. Behöver kika på orsak till detta.
-
 4. Dubbelkolla font-inställningar (font-size, weight etc).
 
 Jag är helt inställd på att det finns fler saker jag har kvar att göra, men tänkte att det var bättre att få in ett första utkast så att jag har feedback att jobba vidare utifrån när jag är tillbaka från Irland 9/10.
