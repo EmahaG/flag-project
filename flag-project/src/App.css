@@ -61,6 +61,12 @@ body.dark-mode .home {
   height: 100vh;
 }
 
+body.dark-mode .filter-container:focus-within .filter-label,
+.filter-label.active {
+    color: white; 
+    background-color:  #202c36;
+} 
+
 body.dark-mode .card {
   background-color: #3E4A55;
   border: none;
