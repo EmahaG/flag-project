@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isFocused, setIsFocused] = useState(false);
 
   const handleSearch = (e) => {
     const value = e.target.value;
@@ -11,13 +12,17 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="search-input">
+    <div className="search-container">
+      <label className={`search-label ${searchTerm || isFocused ? 'active' : ''}`}>
+        Search for a country
+      </label>
       <input
         type="text"
         className="search"
-        placeholder="Search for a country"
         value={searchTerm}
         onChange={handleSearch}
+        onFocus={() => setIsFocused(true)} 
+        onBlur={() => setIsFocused(false)} 
       />
     </div>
   );

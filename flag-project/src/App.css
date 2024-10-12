@@ -67,6 +67,12 @@ body.dark-mode .filter-container:focus-within .filter-label,
     background-color:  #202c36;
 } 
 
+body.dark-mode .search-container:focus-within .search-label,
+.search-label.active {
+  color: white; 
+  background-color:  #202c36;
+} 
+
 body.dark-mode .card {
   background-color: #3E4A55;
   border: none;
