@@ -58,6 +58,7 @@ body.dark-mode h2 {
 
 body.dark-mode .home {
   background-color: #202c36;
+  height: 100vh;
 }
 
 body.dark-mode .card {
