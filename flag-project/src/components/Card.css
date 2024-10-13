@@ -1,13 +1,13 @@
 /* Card.css */
 
 .card-container {
-    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
+    gap: 38px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .card {

@@ -18,7 +18,6 @@
 
 .choice-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   max-width: 1440px;
@@ -30,14 +29,7 @@
   align-items: center;
   padding: 0px;
   gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 /* General Dark Mode Styles */
@@ -58,6 +50,7 @@ body.dark-mode h2 {
 body.dark-mode .home {
   background-color: #202c36;
   height: 100%;
+  width: 100%;
 }
 
 body.dark-mode .filter-container:focus-within .filter-label,
@@ -83,8 +76,8 @@ body.dark-mode .search-container:focus-within .search-label,
 
 body.dark-mode .card {
   background-color: #3E4A55;
-  border: none;
-  outline: 0px;
+  border: 1px solid transparent;
+  /* outline: 0px; */
 }
 
 body.dark-mode .card p {
