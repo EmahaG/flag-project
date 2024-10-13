@@ -14,7 +14,7 @@
 /* Move label when input is focused or has text */
 .search-container:focus-within .search-label,
 .search-label.active {
-    top: -10px; /* Move label above the input */
+    top: -12px; /* Move label above the input */
     left: 15px; /* Keep the left position */
     font-size: 12px; /* Smaller font size */
     color: #333; /* Darker color when active */
