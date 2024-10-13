@@ -1,9 +1,6 @@
 .filter-container {
     position: relative; 
-    margin: 20px; 
     width: 180px;
-    display: flex;
-    align-items: center;
 }
 
 .filter-label {
@@ -97,6 +94,6 @@
   
     * {
         font-size: 12px;
-    }
+    }   
   
 }

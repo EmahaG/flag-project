@@ -1,5 +1,0 @@
-1. Vet att min container inte fungerar som den ska. Trodde jag löst det, men märkte att det inte fungerade riktigt så smidigt som jag tänkt, så detta behöver jag kika på en vända till.
-
-2. Dubbelkolla font-inställningar (font-size, weight etc).
-
-3. Final touches på dropdown - light OCH dark mode

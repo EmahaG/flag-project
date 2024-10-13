@@ -4,9 +4,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 37px;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .card {
@@ -19,6 +20,7 @@
     width: 260px;
     height: 260px;
     margin-bottom: 25px;
+    gap: 10px;
 }
 
 .card:hover {
@@ -77,6 +79,11 @@
         width: 100%;
         height: 260px;
         margin-bottom: 25px;
+        gap: 10px;
+    }
+
+    .card-container {
+        margin-top: 100px;
     }
   
   }

@@ -1,6 +1,6 @@
 .search-container {
-    position: relative; /* Make the container relative for absolute positioning of the label */
-    margin: 20px 0; /* Add some vertical spacing */
+    position: relative; 
+    margin: 20px 0; 
 }
 
 .search-label {
@@ -36,7 +36,7 @@
 @media only screen and (min-width: 375px) and (max-width:900px) {
   
     .search {
-        width: 93vw;
+        width: 100%;
     }
   
-  }
+}
