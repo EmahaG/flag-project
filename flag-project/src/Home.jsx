@@ -3,13 +3,21 @@ import Search from './components/Search.jsx'
 import Filter from './components/Filter.jsx'
 import Card from './components/Card.jsx'; // Ensure path is correct
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useLoaderData} from 'react-router-dom';
+import Skeleton from 'react-loading-skeleton';
 
 export default function Home({darkMode}) {
     const countries = useLoaderData();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedRegion, setSelectedRegion] = useState('');
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        if (countries) {
+            setLoading(false);
+        }
+    }, [countries]);
 
     const handleSearch = (term) => {
         setSearchTerm(term.toLowerCase());
@@ -32,7 +40,13 @@ export default function Home({darkMode}) {
                     <Search onSearch={handleSearch} />
                     <Filter darkMode={darkMode} onFilterChange={handleFilterChange} />
                 </div>
-                <Card countries={filteredCountries} />
+                {loading ? (
+                    <div className="skeleton-loader">
+                        <Skeleton count={4} height={260} width={260} />
+                    </div>
+                ) : (
+                    <Card countries={filteredCountries} />
+                )}
             </div>
         </div>
     )

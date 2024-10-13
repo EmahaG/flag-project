@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./CountryPage.css";
 import backArrow from "./assets/arrow-left-dark.svg";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const CountryPage = () => {
   const { name } = useParams();
@@ -34,7 +36,49 @@ const CountryPage = () => {
     fetchAllCountries();
   }, [name]);
 
-  if (!country) return <p>Loading country details...</p>;
+  if (!country) { 
+    return (
+      <div className="country-page">
+        <div className="container">
+          <div className="back-container">
+            <Link to="/" className="back">
+              <img 
+                className="back-arrow" 
+                src={backArrow}
+                alt="back arrow icon"
+              />
+              <p>BACK</p>
+            </Link>
+          </div>
+          <div className="country-container">
+            <Skeleton height={200} width={300} /> {/* Skeleton for flag */}
+            <div className="country-textbox">
+              <h1><Skeleton width={150} /></h1> {/* Skeleton for country name */}
+              <div className="country-data">
+                <div className="country-data-left">
+                  <p><span className="label">Population:</span> <Skeleton width={100} /></p>
+                  <p><span className="label">Region:</span> <Skeleton width={100} /></p>
+                  <p><span className="label">Capital:</span> <Skeleton width={100} /></p>
+                  <p><span className="label">Native name:</span> <Skeleton width={100} /></p>
+                </div>
+                <div className="country-data-right">
+                  <p><span className="label">Top level domain:</span> <Skeleton width={100} /></p>
+                  <p><span className="label">Currencies:</span> <Skeleton width={100} /></p>
+                  <p><span className="label">Language:</span> <Skeleton width={100} /></p>
+                </div>
+              </div>
+              <div className="border-countries">
+                <span className="label" id="border-label">Border countries:</span>
+                <div className="borders-buttons">
+                  <Skeleton width={150} /> {/* Skeleton for border countries */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const nativeName = country.name.nativeName
     ? Object.values(country.name.nativeName)[0].common
