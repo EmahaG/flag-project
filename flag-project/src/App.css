@@ -102,14 +102,19 @@ body.dark-mode .search {
   color: #C7CACE;
 }
 
-body.dark-mode .filter-dropdown {
+body.dark-mode .country-page {
   background-color: #202c36;
   color: #C7CACE;
 }
 
-body.dark-mode .country-page {
+body.dark-mode .dropdown-options {
+  background-color: #444E56;
+}
+
+body.dark-mode .filter-container:focus-within .filter-label,
+body.dark-mode .filter-label.active {
+  color: white; 
   background-color: #202c36;
-  color: #C7CACE;
 }
 
 body.dark-mode .border-link {

@@ -9,12 +9,6 @@ function Filter({ onFilterChange, darkMode }) {
   const [isOpen, setIsOpen] = useState(false);
   const options = ["All", "Africa", "Americas", "Asia", "Europe", "Oceania"];
 
-  const handleChange = (event) => {
-    const region = event.target.value;
-    setSelectedOption(region);
-    onFilterChange(region);
-  };
-
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     onFilterChange(option);
@@ -25,7 +19,7 @@ function Filter({ onFilterChange, darkMode }) {
     <div className="filter-container">
       <label
         className={`filter-label ${
-          selectedOption || isFocused ? "active" : ""
+          selectedOption || isFocused || isOpen ? "active" : ""
         }`}
       >
         Region

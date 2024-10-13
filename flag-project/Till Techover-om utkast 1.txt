@@ -1,10 +1,5 @@
-Yo guys!
-Jag vet att det är flera saker här jag inte fixat än. Detta är pga tidsbrist, i och med framför allt det environment error jag stötte på under projektet. Här är i alla fall några av de saker jag vet att jag har kvar:
-
 1. Vet att min container inte fungerar som den ska. Trodde jag löst det, men märkte att det inte fungerade riktigt så smidigt som jag tänkt, så detta behöver jag kika på en vända till.
 
-4. Dubbelkolla font-inställningar (font-size, weight etc).
+2. Dubbelkolla font-inställningar (font-size, weight etc).
 
-Jag är helt inställd på att det finns fler saker jag har kvar att göra, men tänkte att det var bättre att få in ett första utkast så att jag har feedback att jobba vidare utifrån när jag är tillbaka från Irland 9/10.
-
-/Matilda
+3. Final touches på dropdown - light OCH dark mode
