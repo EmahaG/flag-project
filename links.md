@@ -1,2 +1,2 @@
 - [Github repository](https://github.com/EmahaG/flag-project)
-- [Deployat projekt](https://matildas-flag-app.netlify.app/)
+- [Deployat projekt](https://matildas-world-flag-app.netlify.app/)

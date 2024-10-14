@@ -1,11 +1,21 @@
 import './Card.css'
 import { Link, useLoaderData } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 
 const Card = ({countries}) => {
-    // const countries = useLoaderData()
+    const [justifyContentStyle, setJustifyContentStyle] = useState('flex-start');
+
+    useEffect(() => {
+        // Determine the justify-content value based on the number of countries
+        if (countries.length >= 4) {
+            setJustifyContentStyle('space-between');
+        } else {
+            setJustifyContentStyle('flex-start');
+        }
+    }, [countries.length]);
 
     return ( 
-        <div className="card-container">
+        <div className="card-container" style={{ justifyContent: justifyContentStyle }}>
             {countries.map((country, i) => {
                 return (
                     <Link to={`/country/${country.name.common}`} className="card" key={i}>
