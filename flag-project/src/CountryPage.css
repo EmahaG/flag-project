@@ -115,12 +115,6 @@
     margin: 5px;
 }
 
-.country-page {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
 @media only screen and (min-width: 375px) and (max-width:900px) {
   
     .country-container {

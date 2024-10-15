@@ -36,7 +36,7 @@
 body.dark-mode {
   background-color: #202c36; /* Dark background for the whole site */
   color: #ffffff; /* Light text color */
-  height: 100vh;
+  height:100%;
 }
 
 body.dark-mode nav {
