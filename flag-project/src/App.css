@@ -72,7 +72,25 @@ body.dark-mode .search-container:focus-within .search-label,
 .search-label.active {
   color: white; 
   background-color: #202c36;
+  padding: 0 5px;
 } 
+
+body.dark-mode .search:focus {
+  border: 1px solid #bbb; /* Lighter border color when focused */
+  outline: none; /* Remove default browser outline */
+}
+
+body.dark-mode .search { 
+  border-radius: 4px;
+  background-color: #202c36; /* Dark background */
+  color: #C7CACE; /* Light text color */
+  border: 1px solid #555;
+ }
+
+body.dark-mode .search-container { 
+  border: none;
+  background-color: transparent;
+}
 
 body.dark-mode .card {
   background-color: #3E4A55;

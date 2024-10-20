@@ -10,6 +10,8 @@
     top: 20px; /* Initial position */
     color: rgb(102, 102, 102); /* Label color */
     transition: all 0.2s; /* Smooth transition for movement */
+    pointer-events: none;
+    padding: 0 5px;
 }
 
 /* Move label when input is focused or has text */
@@ -21,6 +23,17 @@
     color: #333; /* Darker color when active */
     background-color: white;
     padding: 4px;
+}
+
+/* Label when input is focused or has text */
+.search-container:focus-within .search-label,
+.search-label.active {
+    top: -12px;
+    left: 15px;
+    font-size: 12px;
+    color: #333;
+    background-color: white;
+    padding: 0 5px; /* Ensure the background covers the label area */
 }
 
 .search {
